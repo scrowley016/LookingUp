@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="POX-4k-Bax">
+            <objects>
+                <viewController id="QUM-Ld-Xv4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qe6-TC-A5p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Looking Up" translatesAutoresizingMaskIntoConstraints="NO" id="Mj0-YT-BEc">
+                                <rect key="frame" x="0.0" y="54" width="414" height="151.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="FS0-I5-8kt">
+                                <rect key="frame" x="0.0" y="235.5" width="414" height="425.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="IAd-k6-Q86">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="62.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Constellations Visable Tonight:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFZ-f2-jcB">
+                                                <rect key="frame" x="0.0" y="0.0" width="199.5" height="62.5"/>
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planets           Visable Tonight:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubd-3p-F82">
+                                                <rect key="frame" x="214.5" y="0.0" width="199.5" height="62.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moon Phase:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfT-7b-WcG">
+                                        <rect key="frame" x="135.5" y="212.5" width="143.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon To A Sky Near You:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naZ-db-Erd">
+                                        <rect key="frame" x="21.5" y="394" width="371" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="naZ-db-Erd" firstAttribute="centerX" secondItem="FS0-I5-8kt" secondAttribute="centerX" id="HMb-T5-74m"/>
+                                    <constraint firstItem="IAd-k6-Q86" firstAttribute="centerX" secondItem="FS0-I5-8kt" secondAttribute="centerX" id="ksx-uO-vwt"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FS0-I5-8kt" firstAttribute="top" secondItem="Mj0-YT-BEc" secondAttribute="bottom" constant="30" id="0c2-PL-ubi"/>
+                            <constraint firstItem="FS0-I5-8kt" firstAttribute="leading" secondItem="Qe6-TC-A5p" secondAttribute="leading" id="3Lg-P8-Pdx"/>
+                            <constraint firstItem="Mj0-YT-BEc" firstAttribute="leading" secondItem="Qe6-TC-A5p" secondAttribute="leading" id="EMJ-Vy-9z7"/>
+                            <constraint firstItem="Mj0-YT-BEc" firstAttribute="centerX" secondItem="Qe6-TC-A5p" secondAttribute="centerX" id="VGX-zE-Nly"/>
+                            <constraint firstItem="FS0-I5-8kt" firstAttribute="centerY" secondItem="aaD-Zj-MQm" secondAttribute="centerY" constant="-4.75" id="WYM-fX-iCM"/>
+                            <constraint firstItem="FS0-I5-8kt" firstAttribute="centerX" secondItem="Qe6-TC-A5p" secondAttribute="centerX" id="WoL-g5-mj5"/>
+                            <constraint firstAttribute="trailing" secondItem="FS0-I5-8kt" secondAttribute="trailing" id="YAa-2Z-qkn"/>
+                            <constraint firstItem="FS0-I5-8kt" firstAttribute="centerX" secondItem="Qe6-TC-A5p" secondAttribute="centerX" id="e1c-GS-JB4"/>
+                            <constraint firstAttribute="trailing" secondItem="Mj0-YT-BEc" secondAttribute="trailing" id="paF-VS-E6H"/>
+                            <constraint firstItem="Mj0-YT-BEc" firstAttribute="top" secondItem="aaD-Zj-MQm" secondAttribute="top" constant="10" id="tqQ-rM-V07"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aaD-Zj-MQm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n09-d4-cF6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Looking Up" width="1500" height="1500"/>
+    </resources>
+</document>
